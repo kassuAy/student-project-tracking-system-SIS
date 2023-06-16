@@ -5,7 +5,6 @@ import StudentSidebar from '../../navigation/sidebar/StudentSidebar'
 import Head from 'next/head'
 import { useState } from 'react'
 import CoordintorNavbar from '../../navigation/coordinator/CoordinatorNavbar'
-
 export interface BaseLayoutProps extends React.ComponentPropsWithoutRef<'div'> {
   justify?: 'items-center' | 'items-start'
   classname?: string

@@ -35,7 +35,7 @@ const HomeContent = (props: Props) => {
   <h1 className="font-bold text-6xl text-blue-500 mb-2 ml-5 mt-5">Welcome to <span className="font-bold text-xl text-blue-400"></span>SIS Student Project Tracking System</h1>
   <p className="text-xl font-bold  mb-2 ml-5 pt-3">Browse our collection of projects to discover new tools, apps, and designs</p>
    <div className="w-20 text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 ml-5 mt-6 rounded w-40">
-    <a href="" className="text-white font-bold pl-2 px-4 rounded w-50">Login</a></div>
+    <a href="" className="text-white font-bold pl-2 px-4 rounded w-50">Get Started</a></div>
  </div>
  <div>
  <Image src="/home.jpg" alt="My Image" width={400} height={250} className='pl-16'/>
@@ -47,7 +47,7 @@ const HomeContent = (props: Props) => {
           <div className="mt-[100px]">
             
             <div>
-              <h1 className="font-bold text-4xl text-gray-400 text-center pb-12">
+              <h1 id='project' className="font-bold text-4xl text-gray-400 text-center pb-12">
                 Latest Projects
               </h1>
             </div>

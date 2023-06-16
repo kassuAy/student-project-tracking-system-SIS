@@ -50,17 +50,19 @@ const Navbar = () => {
         {size.width > 768 ? (
           <>
             <NavLink route="/">Home</NavLink>
-            <NavLink route="/admin/projects'">Projects</NavLink>
+            <a href="#project" className="text-#132424 pl-5">
+              Projects
+            </a>
             {/* <NavLink route="/mhb"></NavLink> */}
-            <NavLink route='/about_us'>About Us</NavLink>
-            <NavLink route='/contactus'>Contact Us</NavLink>
+            <NavLink route="/about_us">About Us</NavLink>
+            <NavLink route="/contactus">Contact Us</NavLink>
 
             {session ? (
               <NavLink route="/profile">
                 <BsFillPersonFill size={30} />
               </NavLink>
             ) : (
-              <NavLink route="/login" >Login</NavLink>
+              <NavLink route="/login">Login</NavLink>
             )}
           </>
         ) : (
