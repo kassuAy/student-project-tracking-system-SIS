@@ -15,10 +15,18 @@ const UserSchema = new Schema({
         minLength: [4, "Full name should be atleast 4 characters long"],
         maxLength: [30, "Full name should be less than 30 characters"]
     },
+    username:{
+        type:String,
+        required:[true]
+    },
     password: {
         type: String,
         required: [true, "password is required"],
         select: false
+    },
+    role:{
+        type: String,
+        // required:true
     }
 })
 const User = models.User || model("User", UserSchema)

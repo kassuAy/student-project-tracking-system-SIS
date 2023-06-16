@@ -97,7 +97,54 @@ export const Footer = ({
             2023 School of Information Science, Inc. All rights reserved{' '}
           </p>
         </div>
-        <div className='sm:mr-16'>
+      
+      </div>
+      <footer className="py-6 bg-gray-200">
+
+      <div className={clsx('grid grid-cols-4 mx-auto pl-96 pr-48 pb-5 pt-5')}>
+      <div>
+      <a href="">
+            <p className={clsx('text-gray-500')}>Home</p>
+          </a>
+      </div>
+      
+      <div>
+      <p className={clsx('text-gray-500')}>About</p>
+      </div>
+      <div>
+      <a href="">
+            <p className={clsx('text-gray-500')}>Projects</p>
+          </a>
+      </div>
+      
+      <div>
+      <a href="">
+      <p className={clsx('text-gray-500')}>Contact Us</p>
+      </a>
+     
+      </div>
+
+      </div>
+
+      <div className={clsx('grid grid-cols-2 gap-32 mx-auto pl-96 pb-5')}>
+      <div>
+      <a href="">
+            <p className={clsx('text-gray-500')}>6 kilo FBE, Addis Ababa University, Addis Ababa, Ethiopia</p>
+          </a>
+      </div>
+      
+      <div>
+      <p className={clsx('text-gray-500')}>sis@aau.et</p>
+      </div>
+     
+      </div>
+
+      <div className="container mx-auto text-center text-gray-500">
+          <p>
+            © 2023 | School of Information Science. All rights reserved. </p>
+        </div>
+
+      <div className='sm:mr-6 text-center pt-6 '>
           <a href="">
             <FaTwitter
             className={clsx('inline-block text-xl cursor-pointer mx-2')}
@@ -126,7 +173,9 @@ export const Footer = ({
           
           
         </div>
-      </div>
+       
+
+      </footer>
     </>
   )
 }

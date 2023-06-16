@@ -1,27 +1,28 @@
-import BSON from 'bson';
-import { Binary } from 'mongodb';
-import { Schema, model, models } from 'mongoose';
 
-const ProjectSchema = new Schema({
-  project_title: {
+import { Schema, models, model} from "mongoose";
+
+const projectSchema = new Schema({
+  
+  projectTitle: {
     type: String,
-    unique: true,
-    required: [true, 'title is required'],
+    required: true
   },
   description: {
     type: String,
-    required: [true, 'fill the description of the project'],
+    required: true
   },
-  accademicYear: {
-    type: Date,
-    required: [true, "this field can't be empty"],
+  academic_year: {
+    type: String,
+    required: true
   },
-  fileName: {
-    type: Binary,
-    chunkSizeBytes: 1048576, //10 mb
+  demoImage: {
+    data: Buffer,
+    contentType: String
   },
+  projectFile: {
+    data: Buffer,
+    contentType: String
+  }
 });
-
-const Project = models.Project || model('Project', ProjectSchema);
-
-export default Project;
+const Final_project =models.Final_project || model('Final_project',projectSchema)
+export default Final_project

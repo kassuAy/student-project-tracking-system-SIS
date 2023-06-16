@@ -8,6 +8,7 @@ const Button = ({ title, type, disabled, onClick }: ButtonProps) => {
             type={type}
             disabled={disabled}
             onClick={onClick}
+            
         >
             {disabled ? 'Processing...' : title}
         </Container>

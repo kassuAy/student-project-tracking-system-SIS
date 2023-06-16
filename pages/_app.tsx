@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { SessionProvider } from 'next-auth/react';
 import { Roboto } from '@next/font/google';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar/index'
 const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -29,3 +29,19 @@ export default function App({ Component, pageProps }: AppProps) {
     </SessionProvider>
   );
 }
+
+// import '../styles/globals.css'
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+// import Dashboard from '../components/admin/dashboard'
+
+
+// import type { AppProps } from 'next/app'
+
+// export default function App({ Component, pageProps }: AppProps) {
+//   return (
+//     <div>
+//       {/* <Dashboard /> */}
+//       <Component {...pageProps} />
+//     </div>
+//   )
+// }

@@ -60,7 +60,8 @@ const LoginForm = () => {
             
             <AppLogoTitle />
             <Form onSubmit={handleLogin} className="space-y-6 ">
-                <FormTitle> Login </FormTitle>
+                <FormTitle className="g-blue-500"> Login </FormTitle>
+                
 
                 <InputFeild
                     placeholder='Email'

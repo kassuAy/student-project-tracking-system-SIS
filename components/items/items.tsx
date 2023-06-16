@@ -18,7 +18,7 @@ export const Items = () => {
             //   'w-full first:mt-2 lg:flex-row lg:w-auto',
             //   'lg:space-x-10 lg:flex'
             // )}
-            className='grid grid-cols-6'
+            className='grid grid-cols-6 ml-12 mr-12 gap-y-9'
           >
             
             {itemData.map((link, index) => {
@@ -36,19 +36,23 @@ export const Items = () => {
                     <Image
                     src={link.image}
                     alt='image'
-                    width='300'
+                    width='380'
                     height='300'
+					className='p-2'
                     />
 
                    
-                    <div className='font-semibold text-xl '>
+                    <div className='font-semibold text-xl pl-5 pt-5'>
                      {link.title}
                     </div>
-                    <div className='text-sm text-gray-500'>
+                    <div className='text-sm text-gray-500 pl-5'>
                       {link.date}
                     </div>
+                    <div className='text-sm text-gray-500 pl-5 pt-5 pb-3'>
+                      {link.description}
+                    </div>
                     <div>
-                      <Link href={link.href}>View Details</Link>
+                      <Link href={link.href} className='pt-2 pl-5 text-blue-600'>View details</Link>
                     </div>
                     {/* {router.pathname == link.href && (
                       <div className="flex justify-center">
@@ -60,6 +64,7 @@ export const Items = () => {
               )
             })}
           </ul>
+
     </div>
   )
 }

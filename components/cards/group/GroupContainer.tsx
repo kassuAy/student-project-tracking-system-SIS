@@ -4,7 +4,8 @@ import GroupCard from './Group'
 function GroupContainer() {
     const Groups = [
         {name: 'Group 1', _id: '1'},
-        {name: 'Group 2', _id: '2'}
+        {name: 'Group 2', _id: '2'},
+        {name: 'Group 3', _id: '3'}
     ]
   return (
     <div>

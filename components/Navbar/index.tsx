@@ -33,9 +33,9 @@ const Navbar = () => {
   };
 
   return (
-    <Nav>
+    <Nav className="">
       <LogoContainer>
-        <NavLink route="/">
+        {/* <NavLink route="/">
           <Image
             src={sislogo}
             alt="logo"
@@ -43,7 +43,7 @@ const Navbar = () => {
             height={100}
             className="rounded-full background:zinc-500"
           />
-        </NavLink>
+        </NavLink> */}
       </LogoContainer>
 
       <NavLinkContainer>
@@ -52,7 +52,6 @@ const Navbar = () => {
             <NavLink route="/">Home</NavLink>
             <NavLink route="/admin/projects'">Projects</NavLink>
             {/* <NavLink route="/mhb"></NavLink> */}
-            <NavLink route="/products">Products</NavLink>
             <NavLink route='/about_us'>About Us</NavLink>
             <NavLink route='/contactus'>Contact Us</NavLink>
 
@@ -61,7 +60,7 @@ const Navbar = () => {
                 <BsFillPersonFill size={30} />
               </NavLink>
             ) : (
-              <NavLink route="/login">Login</NavLink>
+              <NavLink route="/login" >Login</NavLink>
             )}
           </>
         ) : (

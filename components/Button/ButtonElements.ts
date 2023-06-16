@@ -9,7 +9,7 @@ export const Container = styled.button`
     border-radius: 5px;
     cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    width: 100%;
+    width: 200px;
     border: none;
 
     &:hover {
